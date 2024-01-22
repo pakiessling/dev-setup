@@ -1,0 +1,109 @@
+{
+    "workbench.colorTheme": "Tokyo Hack",
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontWeight": "normal",
+    "editor.fontLigatures": true,
+    "editor.snippetSuggestions": "none",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json",
+                    "comment"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "editor.fontSize": 15,
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "none",
+        "reportMissingImports": "none",
+        "reportMissingModuleSource": "none",
+        "reportOptionalMemberAccess": "none",
+        "reportGeneralTypeIssues": "none",
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.tree.indent": 20,
+    "workbench.colorCustomizations": {
+        "notebook.editorBackground": "#2f2f51",
+        "terminal.selectionBackground": "#ffffff",
+        "editorSuggestWidget.selectedBackground": "#424d66",
+        "editorSuggestWidget.background": "#2f2f51",
+        "editorSuggestWidget.focusHighlightForeground": "#8abc49",
+        "editorSuggestWidget.highlightForeground": "#a063b8"
+    },
+    "git.ignoreLegacyWarning": true,
+    "quarto.path": "/home/mz637064/software/quarto",
+    "remote.SSH.remotePlatform": {
+        "login18-1.hpc.itc.rwth-aachen.de": "linux",
+        "login18-2.hpc.itc.rwth-aachen.de": "linux",
+        "login18-4.hpc.itc.rwth-aachen.de": "linux"
+    },
+    "black-formatter.args": [
+        "--line-length",
+        "99"
+    ],
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "ruff.lint.args": [
+        "--line-length",
+        "99",
+    ],
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.rmd": "rmd",
+        "*.Rmd": "rmd"
+    },
+    "remote.SSH.useFlock": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "r.rpath.linux": "/home/mz637064/mambaforge/bin/R",
+    "jupyter.askForKernelRestart": false,
+    "git.enableSmartCommit": true,
+    "python.terminal.activateEnvironment": false,
+    "window.zoomLevel": 1,
+    "workbench.editorLargeFileConfirmation": 500,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": true,
+        "notebook.source.organizeImports": true
+    },
+}
